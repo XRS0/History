@@ -3,12 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./styles/style.css">
   <title>History</title>
 </head>
 <body>
-  <header>
-    <h1>History prod</h1>
-  </header>
+  <div id="my-text">
+    <h1>Крепостное право</h1>
+    </div>
+    <script>
+    // init
+    printText( document.getElementById( 'my-text' ) );
+    
+    function printText( el ){
+    
+      let letterTimeout = 100
+    
+      let text = el.innerHTML
+      let i = 1
+    
+      print__fn() // init
+    
+      function print__fn(){
+    
+        if( i <= text.length ){
+          el.innerHTML = text.substr( 0, i );
+          setTimeout( arguments.callee, letterTimeout );
+        }
+    
+        i++;
+      }
+    
+    }
+    </script>
 </body>
 </html>
