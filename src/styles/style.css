@@ -1,0 +1,55 @@
+* {
+  background-color: black;
+}
+
+#my-text {
+  color: rgb(233, 234, 228);
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 70px;
+  text-align: center;
+}
+
+.paperButton {
+  align-self: center;
+  background-color: #000000;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 25px 235px 265px 15px 25px 265px 235px 25px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(255, 255, 255, 0.338) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 25px;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 125ms ease-in-out;
+  border-bottom-left-radius: 35px 285px;
+  border-bottom-right-radius: 255px 45px;
+  border-top-left-radius: 285px 35px;
+  border-top-right-radius: 35px 255px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.paperButton:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.paperButton:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+.paperButton:active {
+  color: #ffffffa5;
+  background-color: #2f2f2f9c;
+}
