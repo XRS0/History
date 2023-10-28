@@ -1,1 +1,1 @@
-document.getElementById('flash-text')
+document.querySelector( '.flash-text' ).classList.add('animate__animated', 'animate__flash',);
