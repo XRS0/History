@@ -1,0 +1,11 @@
+* {
+    background-color: black ;
+}
+
+.flash-text {
+font-size: 85px;
+font-family: 'Anonymous Pro', monospace;
+color: whitesmoke;
+text-align: center;
+margin: 130px;
+}

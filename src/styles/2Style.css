@@ -2,8 +2,8 @@
     background-color: black;
 }
 
-h1 {
-    color: white;
+.flash-text {
+    color: whitesmoke;
     text-align: center;
     font-size: 85px;
     font-family: 'Anonymous Pro', monospace;
