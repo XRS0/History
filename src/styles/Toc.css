@@ -1,8 +1,51 @@
 * {
   background-color: black;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;;
 }
 
 .buttons {
+}
+
+.b1 {
+  color: whitesmoke;
+  font-family: 'Anonymous Pro', monospace;
+}
+
+.b1:hover {
+  color: black;
+  background-color: rgba(255, 255, 124, 0.85);
+  transition: 0.5s;
+}
+
+.b2 {
+  color: whitesmoke;
+  font-family: 'Anonymous Pro', monospace;
+}
+
+.b3 {
+  color: whitesmoke;
+  font-family: 'Anonymous Pro', monospace;
+}
+
+.b4 {
+  color: whitesmoke;
+  font-family: 'Anonymous Pro', monospace;
+}
+
+.b5 {
+  color: whitesmoke;
+  font-family: 'Anonymous Pro', monospace;
+}
+
+.b6 {
+  color: whitesmoke;
+  font-family: 'Anonymous Pro', monospace;
+}
+
+
+/* .buttons {
   display: flex;
   flex-flow: row wrap;
   flex: 200px;
@@ -45,4 +88,4 @@
 .b6 {
   color: whitesmoke;
   font-family: 'Anonymous Pro', monospace;
-}
+} */
