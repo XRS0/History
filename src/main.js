@@ -43,7 +43,7 @@ let spans   = textBox.querySelectorAll('span'),
 
 function typing_text(){
     spans[count].classList.add('visible');
-    timeout = 60;
+    timeout = 40;
     if (count < text.length * 2){
         setTimeout(() => {
             count ++;
