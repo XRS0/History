@@ -1,92 +1,58 @@
 * {
-  background-color: black;
-  display: flex;
-  text-align: center;
-  flex-wrap: wrap;;
+  background-color: rgb(19, 8, 8);
+  background-repeat: no-repeat;
+}
+
+
+.svg {
+  position: fixed;
+  z-index: 0;
+}
+
+.disp {
+  display: grid;
+  justify-content: center;
 }
 
 .buttons {
-  flex:200px
+  margin-top: 120px;
+  display: grid;
+  grid-template-columns: repeat(2, 220px);
+  grid-template-rows: repeat(3, 110px);
+  gap: 40px;
+  z-index: 1;
 }
 
-.b1 {
-  color: whitesmoke;
-  font-family: 'Anonymous Pro', monospace;
+.buttons-item {
+  font-family: 'Anonymous Pro', bold;
+  font-size: 14px;
+  border: 2px solid;
+  border-color: rgb(215, 215, 215);
+  border-radius: 5px;
+  color: white;
+  padding: 0;
 }
 
-.b1:hover {
-  color: black;
-  background-color: rgba(255, 255, 124, 0.85);
-  transition: 0.5s;
+.buttons-item:hover {
+  border: 3px solid;
+  background-color: rgba(204, 204, 204, 0.228);
+  transition: 0.3s;
 }
 
-.b2 {
-  color: whitesmoke;
-  font-family: 'Anonymous Pro', monospace;
+.buttons-item:active {
+  background-color: rgba(245, 245, 245, 0.338);
+  transition: 0.3s;
 }
 
-.b3 {
-  color: whitesmoke;
-  font-family: 'Anonymous Pro', monospace;
+path {
+  stroke: rgb(255, 255, 255);
+  animation: draw 2500s linear forwards;
+  stroke-dashoffset: 1000000;
+  stroke-dasharray: 600;
 }
 
-.b4 {
-  color: whitesmoke;
-  font-family: 'Anonymous Pro', monospace;
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
 }
-
-.b5 {
-  color: whitesmoke;
-  font-family: 'Anonymous Pro', monospace;
-}
-
-.b6 {
-  color: whitesmoke;
-  font-family: 'Anonymous Pro', monospace;
-}
-
-
-/* .buttons {
-  display: flex;
-  flex-flow: row wrap;
-  flex: 200px;
-  justify-content: space-evenly;
-  align-items: stretch;
-  align-content: center;
-}
-
-.b1 {
-  color: whitesmoke;
-  font-family: 'Anonymous Pro', monospace;
-}
-
-.b1:hover {
-  color: black;
-  background-color: rgba(255, 255, 124, 0.85);
-  transition: 0.5s;
-}
-
-.b2 {
-  color: whitesmoke;
-  font-family: 'Anonymous Pro', monospace;
-}
-
-.b3 {
-  color: whitesmoke;
-  font-family: 'Anonymous Pro', monospace;
-}
-
-.b4 {
-  color: whitesmoke;
-  font-family: 'Anonymous Pro', monospace;
-}
-
-.b5 {
-  color: whitesmoke;
-  font-family: 'Anonymous Pro', monospace;
-}
-
-.b6 {
-  color: whitesmoke;
-  font-family: 'Anonymous Pro', monospace;
-} */
