@@ -1,92 +1,47 @@
 * {
   background-color: black;
-  display: flex;
-  text-align: center;
-  flex-wrap: wrap;;
+  background-repeat: no-repeat;
+}
+
+body {
+  z-index: 9999;
+}
+
+.svg {
+  position: fixed;
+  z-index: 0;
+}
+
+.disp {
+  display: grid;
+  justify-content: center;
 }
 
 .buttons {
-  flex:200px
+  margin-top: 120px;
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 50px;
+  z-index: 1;
 }
 
-.b1 {
-  color: whitesmoke;
-  font-family: 'Anonymous Pro', monospace;
+.buttons-item {
+  border: 1px solid;
+  border-radius: 5px;
+  color: white;
+  padding: 20px;
 }
 
-.b1:hover {
-  color: black;
-  background-color: rgba(255, 255, 124, 0.85);
-  transition: 0.5s;
+path {
+  stroke: rgb(252, 248, 248);
+  animation: draw 2500s linear forwards;
+  stroke-dashoffset: 1000000;
+  stroke-dasharray: 600;
 }
 
-.b2 {
-  color: whitesmoke;
-  font-family: 'Anonymous Pro', monospace;
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
 }
-
-.b3 {
-  color: whitesmoke;
-  font-family: 'Anonymous Pro', monospace;
-}
-
-.b4 {
-  color: whitesmoke;
-  font-family: 'Anonymous Pro', monospace;
-}
-
-.b5 {
-  color: whitesmoke;
-  font-family: 'Anonymous Pro', monospace;
-}
-
-.b6 {
-  color: whitesmoke;
-  font-family: 'Anonymous Pro', monospace;
-}
-
-
-/* .buttons {
-  display: flex;
-  flex-flow: row wrap;
-  flex: 200px;
-  justify-content: space-evenly;
-  align-items: stretch;
-  align-content: center;
-}
-
-.b1 {
-  color: whitesmoke;
-  font-family: 'Anonymous Pro', monospace;
-}
-
-.b1:hover {
-  color: black;
-  background-color: rgba(255, 255, 124, 0.85);
-  transition: 0.5s;
-}
-
-.b2 {
-  color: whitesmoke;
-  font-family: 'Anonymous Pro', monospace;
-}
-
-.b3 {
-  color: whitesmoke;
-  font-family: 'Anonymous Pro', monospace;
-}
-
-.b4 {
-  color: whitesmoke;
-  font-family: 'Anonymous Pro', monospace;
-}
-
-.b5 {
-  color: whitesmoke;
-  font-family: 'Anonymous Pro', monospace;
-}
-
-.b6 {
-  color: whitesmoke;
-  font-family: 'Anonymous Pro', monospace;
-} */
