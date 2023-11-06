@@ -3,9 +3,6 @@
   background-repeat: no-repeat;
 }
 
-body {
-  z-index: 9999;
-}
 
 .svg {
   position: fixed;
@@ -27,14 +24,25 @@ body {
 }
 
 .buttons-item {
+  font-family: 'Anonymous Pro', monospace;
   border: 1px solid;
   border-radius: 5px;
   color: white;
   padding: 20px;
 }
 
+.buttons-item:hover {
+  border: 4px solid;
+  transition: 0.3s;
+}
+
+.buttons-item:active {
+  background-color: rgba(245, 245, 245, 0.338);
+  transition: 0.3s;
+}
+
 path {
-  stroke: rgb(252, 248, 248);
+  stroke: rgb(255, 255, 255);
   animation: draw 2500s linear forwards;
   stroke-dashoffset: 1000000;
   stroke-dasharray: 600;
