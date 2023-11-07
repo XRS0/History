@@ -1,5 +1,5 @@
 * {
-  background-color: rgb(19, 8, 8);
+  background-color: rgb(13, 6, 6);
 }
 
 .text-button {
@@ -15,7 +15,7 @@
   max-width: 500px;
   font-family: 'Anonymous Pro', monospace;
   font-size: 85px;
-  background: black;
+  background: rgb(13, 6, 6);
   color: rgb(255, 255, 255);
   white-space: pre-wrap;
 }
@@ -47,7 +47,7 @@
 .paperButton {
   align-self: center;
   stroke: whitesmoke;
-  background-color: rgb(19, 8, 8);
+  background-color: rgb(13, 6, 6);
   background-image: none;
   background-position: 0 90%;
   background-repeat: repeat no-repeat;
