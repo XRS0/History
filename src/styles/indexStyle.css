@@ -1,23 +1,26 @@
 * {
   background-color: rgb(13, 6, 6);
+  margin: 0;
+  padding: 0;
 }
 
-.text-button {
-  display: flex;
+.contain {
+  margin-top: 15%;
+  display: grid;
   justify-content: center;
-  align-items: self-end;
-  margin-top: 200px;
-  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr 1fr;
+  gap: 70px;
 }
 
 .screen {
-  display: -webkit-flex;
+  z-index: 1;
   max-width: 500px;
   font-family: 'Anonymous Pro', monospace;
   font-size: 85px;
-  background: rgb(13, 6, 6);
   color: rgb(255, 255, 255);
-  white-space: pre-wrap;
+  text-align: center;
+  grid-column-start: 2;
 }
 .screen span {
   visibility: hidden;
@@ -36,12 +39,12 @@
 }
 
 .ufn {
-  margin-top: auto;
+  grid-column-start: 2;
+  z-index: 1;
   color: rgb(233, 234, 228);
   font-family: 'Anonymous Pro', monospace;
   font-size: 70px;
   text-align: center;
-  position: absolute;
 }
 
 .paperButton {
@@ -59,7 +62,6 @@
   box-sizing: border-box;
   color: #ffffff;
   cursor: pointer;
-  display: inline-block;
   font-family: 'Anonymous Pro', monospace;
   font-size: 25px;
   line-height: 40px;
