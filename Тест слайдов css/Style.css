@@ -1,0 +1,54 @@
+.photo-container-1 {
+    max-width: 380px;
+    width: 100%;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+}
+.photo-container-1 img {
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+}
+.photo-container-1 .photo-1 {
+    position: relative;
+    animation: rotate 10s linear 5s infinite;
+}
+.photo-container-1 .photo-2 {
+    position: absolute;
+    top: 0;
+    animation: rotate 10s linear infinite;
+}
+
+
+@keyframes rotate {
+    0% {
+        opacity: 1;
+        transform: rotate(0) scale(1);
+    }
+    50% {
+        transform: rotate(0) scale(1);
+        opacity: 1;
+    } 
+    59.99999% {
+        transform: rotate(45deg) scale(3);
+        opacity: 0;
+        z-index: 1;
+    }   
+    60% {
+        opacity: 0;
+        z-index: -1;
+    }  
+    100% {
+        opacity: 1;
+    }  
+}
+
+
+* { 
+    background-color: black;
+}
+.photo-container-1 {
+    border: 10px solid white;
+    margin-top: 15%;
+}
