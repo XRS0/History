@@ -9,6 +9,7 @@
 .photo-container-1 img {
     width: 100%;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+    height: 650px;
 }
 .photo-container-1 .photo-0 {
     position: relative;
@@ -19,6 +20,16 @@
     animation: fromtop 10s linear 5s infinite;
 }
 .photo-container-1 .photo-2 {
+    position: absolute;
+    top:-100%;
+    animation: fromtop 10s linear 5s infinite;
+}
+.photo-container-1 .photo-3 {
+    position: absolute;
+    top:-100%;
+    animation: fromtop 10s linear 5s infinite;
+}
+.photo-container-1 .photo-1 {
     position: absolute;
     top:-100%;
     animation: fromtop 10s linear infinite;
