@@ -5,22 +5,20 @@
 }
 
 .contain {
-  margin-top: 15%;
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 1fr 1fr;
-  gap: 70px;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  align-items: center;
+  row-gap: 7rem;
+  text-align: center;
 }
 
 .screen {
+  font-family: unbound;
   z-index: 1;
-  max-width: 500px;
-  font-family: 'Anonymous Pro', monospace;
+  max-width: 1000px;
   font-size: 85px;
   color: rgb(255, 255, 255);
-  text-align: center;
-  grid-column-start: 2;
 }
 .screen span {
   visibility: hidden;
@@ -33,13 +31,18 @@
   animation: blinking 1s step-start infinite;
 }
 
+@font-face {
+  font-family: unbound;
+  src: url(../fonts/Unbounded-VariableFont_wght.ttf);
+  font-weight: 200;
+}
+
 @keyframes blinking {
   50% {opacity: 1;}
   100% {opacity: 0;}
 }
 
 .ufn {
-  grid-column-start: 2;
   z-index: 1;
   color: rgb(233, 234, 228);
   font-family: 'Anonymous Pro', monospace;

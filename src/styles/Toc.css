@@ -7,6 +7,7 @@ body {
 }
 
 .svg {
+  margin-top: 30px;
   position: fixed;
   z-index: 0;
 }
@@ -17,7 +18,7 @@ body {
 }
 
 .buttons {
-  margin-top: 120px;
+  margin-top: 150px;
   display: grid;
   grid-template-columns: repeat(2, 220px);
   grid-template-rows: repeat(3, 110px);
@@ -49,12 +50,11 @@ body {
 }
 
 path {
-  stroke: rgb(255, 255, 255);
-  stroke-width: 8;
+  stroke: #ffffff;
+  stroke-width: 5;
   animation: draw 2500s linear forwards;
   stroke-dashoffset: 1000000;
   stroke-dasharray: 650;
-  
 }
 
 @keyframes draw {

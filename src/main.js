@@ -21,8 +21,6 @@
 //       }
 //     }
 // document.querySelector( '.ufn' ).style.display = 'none'
-
-document.querySelector( '.screen' ).style.display = 'block'
 document.querySelector( '.ufn' ).classList.add('animate__animated', 'animate__flash',);
 
 let textBox = document.querySelector('.screen'),

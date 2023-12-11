@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(13, 6, 6);
+}
+
+.contain {
+  row-gap: 10px;
+  column-gap: 50px;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 1,5fr 1,5fr 0.5fr;
+}
+
+.text {
+  font-family: sreda;
+  grid-row-start: 2;
+}
+
+.page {
+  border: 2px;
+  grid-row-start: 2;
+  grid-column-start: 2;
+  margin-right: 50px;
+}
+
+.screen {
+  grid-row-end: 3;
+  margin-top: 20px;
+  font-size: 20px;
+  margin-left: 50px;
+  grid-column-start: 1;
+  grid-row-start: 2;
+  text-align: center;
+  color: white
+}
+
+.title {
+  font-family: rimma_sans-bold;
+  margin-top: 50px;
+  margin-left: 30px;
+  text-align: center;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  font-size: 25px;
+  color: white;
+}
+
+@font-face {
+  font-family: rimma_sans-bold;
+  font-weight: 300;
+  src: url(../fonts/RIMMA_SANS-BOLD.ttf);
+}
+
+@font-face {
+  font-family: sreda;
+  src: url(../fonts/Sreda.otf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: unbound;
+  src: url(../fonts/Unbounded-VariableFont_wght.ttf);
+}
+
+.screen span {
+  visibility: hidden;
+}
+
+.screen span.visible {
+  visibility: visible;
+}
+
+.screen span.cursor {
+  background: rgb(255, 255, 255);
+  animation: blinking 1s step-start infinite;
+}
