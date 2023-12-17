@@ -5,6 +5,30 @@
 body {
   background-color: rgb(13, 6, 6);
 }
+header {
+  margin-top: 20px;
+  height: 70px;
+  border-bottom: 2px solid whitesmoke;
+}
+
+.logo {
+  font-size: 40px;
+  font-family: exo2;
+  margin-left: 30px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s;
+}
+
+.logo:hover {
+  color: rgb(255, 93, 93);
+  font-size: 40px;
+  transition:all 0.3s;
+}
+
+footer {
+  height: 300px;
+}
 
 .svg {
   margin-top: 30px;
@@ -18,23 +42,36 @@ body {
 }
 
 .buttons {
-  margin-top: 150px;
+  margin-top: 170px;
   display: grid;
   grid-template-columns: repeat(2, 220px);
   grid-template-rows: repeat(3, 110px);
-  gap: 40px;
+  column-gap: 300px;
+  row-gap: 250px;
   z-index: 1;
 }
 
 .buttons-item {
-  font-family: 'Anonymous Pro', bold;
-  font-size: 14px;
+  height: 200px;
+  width: 350px;
+  font-family: 'Anonymous pro', bold;
+  font-size: 25px;
   border: 2px solid;
   border-color: rgb(215, 215, 215);
   border-radius: 5px;
   color: white;
   padding: 0;
   background-color: rgb(13, 6, 6);
+}
+
+@font-face {
+  font-family: sreda;
+  src: url(../fonts/Sreda.otf);
+}
+
+@font-face {
+  font-family: exo2;
+  src: url(../fonts/Exo2-VariableFont_wght\ —\ копия.ttf);
 }
 
 .buttons-item:hover {
@@ -53,7 +90,7 @@ path {
   stroke: #ffffff;
   stroke-width: 5;
   animation: draw 2500s linear forwards;
-  stroke-dashoffset: 1000000;
+  stroke-dashoffset: 700000;
   stroke-dasharray: 650;
 }
 

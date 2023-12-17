@@ -4,13 +4,21 @@
   padding: 0;
 }
 
-.contain {
-  display: flex;
-  flex-direction: column;
-  flex-flow: column wrap;
-  align-items: center;
-  row-gap: 7rem;
+header {
+  height: 300px;
+}
+
+footer {
+  height: 10px;
   text-align: center;
+  color: white;
+}
+
+.contain {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
 }
 
 .screen {
@@ -67,7 +75,7 @@
   cursor: pointer;
   font-family: 'Anonymous Pro', monospace;
   font-size: 25px;
-  line-height: 40px;
+  line-height: 100px;
   outline: none;
   padding: .75rem;
   text-decoration: none;
@@ -82,7 +90,7 @@
 }
 
 .paperButton:hover {
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  box-shadow: rgba(253, 253, 253, 0.3) 2px 8px 8px -5px;
   transform: translate3d(0, 2px, 0);
 }
 

@@ -1,5 +1,4 @@
-document.querySelector( '.screen' ).style.display = 'block'
-document.querySelector( '.page' ).classList.add('animate__animated', 'animate__flash',);
+document.querySelector( '.screen' ).style.display = 'flex'
 
 let textBox = document.querySelector('.screen'),
     text    = textBox.innerText,
@@ -20,7 +19,7 @@ let spans   = textBox.querySelectorAll('span'),
 
 function typing_text(){
     spans[count].classList.add('visible');
-    timeout = 10;
+    timeout = 50;
     if (count < text.length * 2){
         setTimeout(() => {
             count ++;
