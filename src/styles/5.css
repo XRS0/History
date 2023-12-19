@@ -18,6 +18,7 @@ header {
 }
 
 .container-theme-slides {
+  text-align: center;
   margin-top: 200px;
   color: white;
   text-align: center;
@@ -40,6 +41,7 @@ margin-left: 500px;
   width: 750px;
   font-size: 25px;
   margin-top: 20%;
+  font-family: exo2;
 }
 .zag {
   font-size: 35px;
@@ -60,6 +62,8 @@ margin-left: 500px;
 
 
 .screen {
+  margin-left: 27%;
+  max-width: 700px;
   z-index: 1;
   font-size: 85px;
   font-family: unbound;
